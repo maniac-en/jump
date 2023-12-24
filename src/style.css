@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  overflow: hidden;
+}
+
+.background {
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.background td {
+  padding: 0;
+}
+
+body, .background {
+  background: #233142;
+}
+
+.wall {
+  background: #455d7a;
+}
+
+.lava {
+  background: #f95959;
+}
+
+.player {
+  background: #e3e3e3;
+}
+
+.actor {
+  position: absolute;
+}
+
+.coin {
+  background: rgb(241, 229, 89);
+}
+
+.lost .player {
+  box-shadow: -4px -7px 8px red, 4px -7px 8px red;
+}
+
+.won .player {
+  box-shadow: -4px -7px 8px black, 4px -7px 8px black;
+}
+
+.game {
+  margin-left: 100px;
+  margin-top: 125px;
+  overflow: hidden;
+  max-width: 1150px;
+  max-height: 768px;
+  position: relative;
+}
+
+#level_counter {
+  position: fixed;
+  width: 250px;
+  top: 125px;
+  right: 125px;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #e3e3e3;
+  z-index: 100;
+}
+
+#level_counter::before{
+  content: "Level-";
+  display: inline-block;
+  position: relative;
+  width: 190px;
+}
+
+#coin_counter {
+  position: fixed;
+  width: 350px;
+  top: 175px;
+  right: 25px;
+  font-size: 30px;
+  color: #f95959;
+  font-family: 'Press Start 2P', cursive;
+  z-index: 100;
+}
+
+#coin_counter::before{
+  content: "Coins-";
+  display: inline-block;
+  position: relative;
+  width: 190px;
+}
+
